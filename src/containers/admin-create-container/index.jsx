@@ -66,7 +66,7 @@ function AdminCreateContainer({ isEditor }) {
       </div>
       <MDEditor height={500} value={content} onChange={setContent} />
 
-      <button type="submit" disabled={isEditor}>
+      <button type="submit" disabled={!isEditor}>
         Create {!isEditor && " Only editor can create posts"}
       </button>
     </form>
