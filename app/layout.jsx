@@ -1,14 +1,16 @@
-import './globals.css'
+import { getSession } from "@/lib/session";
+import { Header } from "@/components/core/header";
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+  const session = await getSession();
+
   return (
-    <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.jsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
+    <html>
       <head />
-      <body>{children}</body>
+      <body>
+        <Header session={session} />
+        {children}
+      </body>
     </html>
-  )
+  );
 }
