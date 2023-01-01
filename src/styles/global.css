@@ -1,0 +1,27 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  color: var(--gray);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--black);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr min(968px, 90vw) 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+.container > * {
+  grid-column: 2;
+}

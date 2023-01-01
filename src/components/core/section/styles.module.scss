@@ -1,0 +1,13 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xl);
+}
+
+.heading {
+  margin-top: var(--gap-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-m);
+  max-width: 50ch;
+}

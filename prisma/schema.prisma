@@ -1,6 +1,5 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
+// Migration and adding new fields
+// @see: https://www.prisma.io/docs/guides/database/prototyping-schema-db-push
 generator client {
   provider = "prisma-client-js"
 }
@@ -13,10 +12,11 @@ datasource db {
 model Post {
   id        String  @id @default(cuid())
   title     String
-  content   String?
+  content   String
+  imageUrl  String
   published Boolean @default(false)
-  author    User?   @relation(fields: [authorId], references: [id])
-  authorId  String?
+  author    User   @relation(fields: [authorId], references: [id])
+  authorId  String
 }
 
 
@@ -55,10 +55,10 @@ model User {
   name          String?
   email         String?   @unique
   image         String?
+  emailVerified DateTime?
   posts         Post[]
   accounts      Account[]
   sessions      Session[]
-  bio           String?
 }
 
 model VerificationToken {

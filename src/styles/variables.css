@@ -1,0 +1,25 @@
+:root {
+  --primary: rgb(11 99 229);
+  --black: rgb(6, 28, 61);
+  --gray: rgb(131 142 158);
+  --light-gray: rgb(230 232 236);
+  --slight-gray: rgb(245 246 247);
+  --white: rgb(255 255 255);
+
+  --shadow-m: 0 0 48px 0 rgb(6, 28, 61, 0.05);
+
+  --gap-xs: 4px;
+  --gap-s: 8px;
+  --gap-m: 12px;
+  --gap-l: 16px;
+  --gap-xl: 24px;
+  --gap-xxl: 48px;
+
+  --border-xs: 4px;
+  --border-s: 8px;
+  --border-m: 12px;
+  --border-l: 16px;
+  --border-xl: 24px;
+
+  --transition: 300ms ease-in-out;
+}

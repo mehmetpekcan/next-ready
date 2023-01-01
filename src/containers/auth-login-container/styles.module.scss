@@ -1,0 +1,20 @@
+.authLoginContainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  button {
+    display: flex;
+    border: 1px solid var(--light-gray);
+    padding: var(--gap-m);
+    gap: var(--gap-m);
+    transition: all var(--transition);
+    border-radius: var(--border-m);
+
+    &:hover {
+      border-color: var(--black);
+      color: var(--black);
+    }
+  }
+}

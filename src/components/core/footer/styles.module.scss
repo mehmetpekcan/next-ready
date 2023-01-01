@@ -1,0 +1,11 @@
+.footer {
+  display: flex;
+  align-items: center;
+  padding: var(--gap-l);
+  justify-content: center;
+
+  a {
+    color: var(--primary);
+    text-decoration: underline;
+  }
+}

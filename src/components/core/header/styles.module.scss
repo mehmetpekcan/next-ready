@@ -1,0 +1,24 @@
+.header {
+  padding-top: var(--gap-l);
+  padding-bottom: var(--gap-l);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: var(--border-l);
+  margin-top: var(--gap-xl);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-xl);
+
+  a {
+    transition: all var(--transition);
+  }
+
+  a:hover,
+  a.active {
+    color: var(--black);
+  }
+}

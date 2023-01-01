@@ -1,0 +1,48 @@
+.featuredCard {
+  position: relative;
+  height: 30vh;
+
+  padding: var(--gap-xxl);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: var(--border-l);
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+  filter: brightness(0.75);
+}
+
+.contentWrapper {
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-l);
+
+  &,
+  h3 {
+    color: var(--white);
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+}
+
+.author {
+  font-size: 14px;
+}
+
+.readMoreButton {
+  color: var(--white);
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--gap-m) var(--gap-l);
+  border-radius: var(--border-s);
+}

@@ -1,0 +1,26 @@
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-l);
+
+  input {
+    padding: var(--gap-m);
+    border: 1px solid var(--light-gray);
+  }
+
+  button {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: var(--gap-m);
+    border-radius: var(--border-xs);
+  }
+}
+
+.inputGroup {
+  display: flex;
+  gap: var(--gap-l);
+
+  & > * {
+    flex: 1;
+  }
+}
